@@ -30,12 +30,12 @@ function ShoppingList({ cart, updateCart }) {
 	return (
         
 		<div className='lmj-shopping-list'>
-			<select onChange={(event)=> UpdateCategory(event.target.value)}>
+			<select className='bt' onChange={(event)=> UpdateCategory(event.target.value)}>
 				{categories.map((cat) => (
 					<option key={cat} value={cat}>{cat}</option>
 				))}
 			</select>
-            <button onClick={()=>UpdateCategory("")}>Reinitialiser</button>
+            <button className='bt' onClick={()=>UpdateCategory("")}>Reinitialiser</button>
             
             {Category === "" ? (
 			<ul className='lmj-plant-list'>
