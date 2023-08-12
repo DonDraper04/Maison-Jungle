@@ -12,7 +12,6 @@ function Cart({ cart, updateCart }) {
     useEffect(() => {
         document.title = `LMJ: ${total}€ d'achats`
     }, [total])
-    useEffect(()=>alert("www"))
 	return isOpen ? (
 		<div className='lmj-cart'>
 			<button
